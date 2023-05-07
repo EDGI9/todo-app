@@ -1,0 +1,11 @@
+- Render an initial list of items to the page
+- Implement controls to remove existing items
+- Implement a means to set one of the items as ‘selected’
+- Implement controls to add new items based on text input
+
+Not obligatory, but nice to add:
+- State management
+- Tests
+- Styling
+- Type safety (either Flow or Typescript)
+- Tests (just one or two to show your ability of using them)
