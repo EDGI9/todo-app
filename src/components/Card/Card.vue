@@ -15,15 +15,5 @@
         margin: 10px 0;
         display: flex;
         align-items: center;
-        /* .c-card__content{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 10px;
-            flex: 1;
-        }
-        .c-card__actions {
-            min-width: 50px;
-        } */
     }
 </style>

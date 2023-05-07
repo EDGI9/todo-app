@@ -11,21 +11,21 @@
 
 <script setup lang="ts">
     import {ref, defineProps } from 'vue';
-    import { ItemDTO } from "../../integration/business/dto/item.dto";
+    import { Item } from "../../interfaces/item";
     import Card from '../Card/Card.vue'
     const emit = defineEmits(['check'])
     //@ts-ignore
     const props = defineProps({
         items: {
-            type: Array<ItemDTO>,
+            type: Array<Item>,
             default: () => []
         },
     })
 
   
-    let checkedItems = ref(<ItemDTO[]>[])
+    let checkedItems = ref(<Item[]>[])
 
-    function toggleItem(item: ItemDTO): void {
+    function toggleItem(item: Item): void {
       const index = checkedItems.value.findIndex((checkedItem) => checkedItem.id === item.id)
       if (index === -1) {
         checkedItems.value.push(item);

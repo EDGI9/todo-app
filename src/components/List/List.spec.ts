@@ -36,8 +36,7 @@ describe('List tests', () => {
         expect(listItems.children.length).toEqual(2);
 
         await fireEvent.click(firstListItemCheckBox);
-        //TODO: Check how to verify if it is checked
-        // expect(firstListItemCheckBox).toBeChecked();
+        expect(firstListItemCheckBox.checked).toBeTruthy();
     });
 
 
